@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
+    "deploy": "yarn build && gh-pages -d public -r git@github.com:cheong38/cheong38.github.io.git -b master",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -14,5 +15,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "theme-ui": "0.4.0-alpha.3"
+  },
+  "devDependencies": {
+    "gh-pages": "~3.1.0"
   }
 }
